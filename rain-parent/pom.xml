@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.5</version>
+        <relativePath/>
+    </parent>
+    <groupId>top.rain.basic</groupId>
+    <artifactId>rain-parent</artifactId>
+    <version>1.0.2</version>
+    <packaging>pom</packaging>
+
+    <modelVersion>4.0.0</modelVersion>
+    <name>${project.artifactId}</name>
+    <description>Spring Boot 3.x项目依赖管理</description>
+    <url>https://github.com/zuihou/lamp-cloud</url>
+
+    <properties>
+        <env.version>1.0.2</env.version>
+
+        <netty.version>4.1.108.Final</netty.version>
+        <gson.version>2.10.1</gson.version>
+        <grovy.version>4.0.21</grovy.version>
+        <sc.version>5.3.34</sc.version>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <hutool.version>5.8.22</hutool.version>
+        <fastjson.version>1.2.83</fastjson.version>
+        <spring-boot.version>3.1.5</spring-boot.version>
+        <druid.version>1.2.20</druid.version>
+        <p6spy.version>3.9.1</p6spy.version>
+        <mysql.version>8.0.33</mysql.version>
+
+
+        <spring-cloud-dependencies.version>2022.0.4</spring-cloud-dependencies.version>
+        <spring-cloud-alibaba-dependencies.version>2022.0.0.0</spring-cloud-alibaba-dependencies.version>
+        <seata.version>1.7.1</seata.version>
+        <nacos.version>2.2.4</nacos.version>
+        <sentinel.version>1.8.6</sentinel.version>
+        <spring-boot-admin.version>3.1.3</spring-boot-admin.version>
+        <dockerfile-maven-plugin.version>1.4.12</dockerfile-maven-plugin.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <oshi.version>6.3.2</oshi.version>
+        <druid.version>1.2.20</druid.version>
+        <mybatis.version>3.5.13</mybatis.version>
+        <mybatis-spring.version>2.1.1</mybatis-spring.version>
+        <mybatis.typehandlers.version>1.0.2</mybatis.typehandlers.version>
+        <mybatis-plus.version>3.5.4.1</mybatis-plus.version>
+        <dynamic.datasource.version>4.2.0</dynamic.datasource.version>
+        <jasypt.version>3.0.4</jasypt.version>
+        <p6spy.version>3.9.1</p6spy.version>
+        <fastjson.version>1.2.83</fastjson.version>
+        <transmittable-thread-local.version>2.12.2</transmittable-thread-local.version>
+        <knife4j.version>4.3.0</knife4j.version>
+        <knife4j-swagger-models-v3.version>2.2.8</knife4j-swagger-models-v3.version>
+        <aviator.version>5.1.4</aviator.version>
+        <groovy.version>4.0.0</groovy.version>
+        <guava.version>30.1.1-jre</guava.version>
+        <commons-exec.version>1.3</commons-exec.version>
+        <commons-email.version>1.5</commons-email.version>
+        <commons.collections4.version>4.4</commons.collections4.version>
+        <commons.collections.version>3.2.2</commons.collections.version>
+        <commons-lang.version>2.6</commons-lang.version>
+        <commons-io.version>2.8.0</commons-io.version>
+        <commons-logging.version>1.2</commons-logging.version>
+        <asm.version>5.0.4</asm.version>
+        <jjwt.version>0.11.2</jjwt.version>
+        <tobato-fastdfs-client.version>1.27.3-SNAPSHOT</tobato-fastdfs-client.version>
+        <qcloudsms.version>1.0.6</qcloudsms.version>
+        <tencentcloud-sdk-java.version>3.1.831</tencentcloud-sdk-java.version>
+        <aliyun-java-sdk-dysmsapi.version>2.1.0</aliyun-java-sdk-dysmsapi.version>
+        <aliyun-dysmsapi.version>2.0.23</aliyun-dysmsapi.version>
+        <aliyun-sdk-oss.version>3.16.0</aliyun-sdk-oss.version>
+        <bce-java-sdk.version>0.10.217</bce-java-sdk.version>
+        <esdk-obs-java.version>3.22.3.1</esdk-obs-java.version>
+        <qiniu-java-sdk.version>7.12.0</qiniu-java-sdk.version>
+        <minio.version>8.2.2</minio.version>
+        <lombok.version>1.18.24</lombok.version>
+        <javassist.version>3.25.0-GA</javassist.version>
+        <antisamy.version>1.6.7</antisamy.version>
+        <caffeine.version>2.9.3</caffeine.version>
+        <protostuff.version>1.7.4</protostuff.version>
+        <ip2region.version>2.6.5</ip2region.version>
+        <bitwalker.version>1.21</bitwalker.version>
+        <gson.version>2.8.9</gson.version>
+        <jsoup.version>1.15.3</jsoup.version>
+        <JustAuth.version>1.16.5</JustAuth.version>
+        <sun-jaxb.version>2.3.0.1</sun-jaxb.version>
+
+        <okio.version>2.10.0</okio.version>
+        <okhttp3.version>4.10.0</okhttp3.version>
+
+
+
+
+
+
+
+    </properties>
+
+<!--<dependencyManagement>-->
+    <dependencies>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>${hutool.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>
+        <!--        自定义starter相关-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <!--        自动配置依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <!--        自动配置执行器依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15to18</artifactId>
+            <version>1.69</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+
+
+    </dependencies>
+<!--</dependencyManagement>-->
+
+    <repositories>
+        <repository>
+            <id>aliyun</id>
+            <name>aliyun</name>
+            <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/libs-milestone</url>
+        </repository>
+        <repository>
+            <id>oss-public</id>
+            <url>https://oss.sonatype.org/content/repositories/public</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>aliyun-plugin</id>
+            <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <!--        <resources>-->
+        <!--            <resource>-->
+        <!--                <directory>src/main/resources</directory>-->
+        <!--                <includes>-->
+        <!--                    <include>**/*</include>-->
+        <!--                </includes>-->
+        <!--                <filtering>true</filtering>-->
+        <!--            </resource>-->
+        <!--            <resource>-->
+        <!--                <directory>src/main/java</directory>-->
+        <!--                <includes>-->
+        <!--                    <include>**/*.xml</include>-->
+        <!--                </includes>-->
+        <!--                <filtering>true</filtering>-->
+        <!--            </resource>-->
+        <!--        </resources>-->
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven-compiler-plugin.version}</version>
+                    <configuration>
+                        <source>${maven.compiler.source}</source>
+                        <target>${maven.compiler.target}</target>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                        <!--                        <compilerArgs>-Xlint:deprecation</compilerArgs>-->
+                        <!--                        <compilerArgs>-Xlint:unchecked</compilerArgs>-->
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>${maven-resources-plugin.version}</version>
+                    <configuration>
+                        <!-- 后缀为pem、pfx的证书文件 -->
+                        <nonFilteredFileExtensions>
+                            <nonFilteredFileExtension>pem</nonFilteredFileExtension>
+                            <nonFilteredFileExtension>map</nonFilteredFileExtension>
+                            <nonFilteredFileExtension>pfx</nonFilteredFileExtension>
+                            <nonFilteredFileExtension>p12</nonFilteredFileExtension>
+                            <nonFilteredFileExtension>key</nonFilteredFileExtension>
+                            <nonFilteredFileExtension>db</nonFilteredFileExtension>
+                            <nonFilteredFileExtension>xdb</nonFilteredFileExtension>
+                            <nonFilteredFileExtension>eot</nonFilteredFileExtension>
+                            <nonFilteredFileExtension>otf</nonFilteredFileExtension>
+                            <nonFilteredFileExtension>svg</nonFilteredFileExtension>
+                            <nonFilteredFileExtension>ttf</nonFilteredFileExtension>
+                            <nonFilteredFileExtension>woff</nonFilteredFileExtension>
+                            <nonFilteredFileExtension>woff2</nonFilteredFileExtension>
+                            <nonFilteredFileExtension>map</nonFilteredFileExtension>
+                        </nonFilteredFileExtensions>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>${maven-javadoc-plugin.version}</version>
+                    <configuration>
+                        <!--                        <aggregate>true</aggregate>-->
+                        <encoding>UTF-8</encoding>
+                        <charset>UTF-8</charset>
+                        <docencoding>UTF-8</docencoding>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>attach-javadocs</id>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                            <configuration>
+                                <additionalJOption>-Xdoclint:none</additionalJOption>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+                <!--配置生成源码包 -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>${maven-source-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <id>attach-sources</id>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <!-- 一键更新子模块版本号 -->
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>versions-maven-plugin</artifactId>
+                    <version>${versions-maven-plugin.version}</version>
+                    <configuration>
+                        <generateBackupPoms>false</generateBackupPoms>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+    </build>
+</project>
